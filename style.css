@@ -1,0 +1,19 @@
+:root{
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    font-family: 'Cormorant SC',sans-serif;
+    
+}
+
+
+.leaf-background{
+    background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+}
