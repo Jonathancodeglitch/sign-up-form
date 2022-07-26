@@ -1,5 +1,7 @@
 :root{
-
+--color-white:white;
+--color-black:black;
+--bold:bold;
 }
 
 *{
@@ -8,12 +10,150 @@
     box-sizing: border-box;
 }
 
-.text{
-    font-family: 'Cormorant SC',sans-serif;
-    
+body,html{
+    height: 100%;
+    overflow: auto;
 }
 
 
 .leaf-background{
+    position: relative;
     background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position:center;
+    background-size: cover;
+    
+    flex: 1;
+    height: 100%;
+    color: var(--color-white);
+
+}
+
+img[src='./img/odin-lined.png']{
+    width: 75px;
+    height: 90px;
+}
+
+.transparent-background{
+    position: absolute;
+    top: 160px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-text{
+    font-weight: normal;
+    font-size: 4rem;
+    font-family: 'Staatliches';
+}
+
+#container{
+    display:flex;
+    height: 100%;
+    overflow: hidden;
+}
+.major-sign-up{width: 100%;
+    flex: 2;
+    position: relative;
+    height: 100%;
+}
+
+/* sign up area */
+.sign-up{
+    background-color: #e8eded;
+    width: 100%;
+    height:33vh;
+    padding:0 0px 0 30px;
+    display: flex;
+   
+    align-items:flex-end;
+    justify-content: flex-start;
+}
+.text-content{
+    text-align: left;
+    color: var(--color-black);
+    font-weight: var(--bold);
+   width: 700px;
+   font-size: 18px;
+
+}
+.text-content p:nth-child(2){
+margin-top: 20px;
+padding-bottom: 30px;
+
+}
+
+.box-shadow{
+    padding:0 0px 0 30px;
+  margin-bottom: 5px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+.input-area h4{
+    padding: 20px 0 0 0;
+    font-size: 30px;
+}
+
+.input-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding: 10px 0 30px 0;
+ 
+   
+}
+.input-container{
+    margin-top:10px;
+    margin-right: 30px;
+}
+.error{
+    color: red;
+}
+input{
+  width: 300px;
+  height: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 7px  rgba(0,0,0,0.2);
+}
+
+.btn-container{
+   padding-top: 5px;
+   background-color: #e8eded;
+ padding:0 0px 0 30px;
+padding-top: 30px;
+  height:33vh ;
+  
+}
+
+.btn-container button{
+    display: inline-block;
+    border: none;
+    padding: 14px 45px;
+    color: white;
+    background-color: #596D48;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.btn-container p{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.btn-container span{
+    color: #596D48;
 }

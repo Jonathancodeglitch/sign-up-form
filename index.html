@@ -6,19 +6,86 @@
     <link rel="stylesheet" href="./style.css">
     <title>sign-up-form</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Epilogue:wght@300&display=swap');
-     </style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        </style>
 </head>
 
 <body>
-<div class="container">
+<div id="container">
      <!-- leaf background -->
     <div class="leaf-background">
       <div class="transparent-background">
           <div class="logo"><img src="./img/odin-lined.png" alt="logo"><span class="logo-text">ODIN</span></div>
       </div>
     </div>
-
+     <!-- sign up inputs -->
+       <div class="major-sign-up">
+     <div class="sign-up">
+     <div class="text-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut rerum hic voluptatem enim, dolore aperiam sit molestias placeat! Placeat laboriosam nostrum sapiente quae! Laboriosam a dolores iusto adipisci totam quo.</p>
+        <p>you know you want to</p>
+     </div>
+     </div>
+               <!-- input area -->
+               <div class="input-area">
+               
+              <form action="">
+                 <div class="box-shadow">
+                <h4>Lets do this!</h4>
+                <div class="input-main">
+                <div class="input-container">
+                    <div>
+                        <label for="FIRSTNAME">FIRST NAME</label>
+                    </div>
+                    <input type="text" name="firstname" id="FIRSTNAME" required>
+                </div>
+                
+                <div class="input-container">
+                    <div>
+                        <label for="secondNAME">SECOND NAME</label>
+                    </div>
+                    <input type="text" name="firstname" id="secondNAME" required>
+                </div>
+                
+                <div class="input-container">
+                    <div>
+                        <label for="Email">EMAIL</label>
+                    </div>
+                    <input type="email" name="firstname" id="Email" placeholder="user@example.com" required>
+                </div>
+                
+                <div class="input-container">
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                    </div>
+                    <input type="text" name="firstname" id="phone-number" required>
+                </div>
+                
+                <div class="input-container">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                    </div>
+                    <input type="password" class="pass1" name="firstname" id="FIRSTNAME" required>
+                      <div class="error"></div>
+                </div>
+                
+                <div class="input-container">
+                    <div>
+                        <label for="password con">PASSWORD CONFORMATION</label>
+                    </div>
+                    <input type="password" class="pass2" name="firstname" id="FIRSTNAME"  required>
+                </div>
+            </div>
+        </div>
+            <!-- ******** -->
+            <div class="btn-container">
+                <button>Create Account</button>
+                <p>Already have an account?<span> Log in</span></p>
+             </div>
+              </form>
+            </div>
+        </div>
 </div>
+<script src="./app.js"></script>
 </body>
 </html>
